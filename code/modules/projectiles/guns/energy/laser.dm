@@ -207,11 +207,11 @@
 	icon_state = "wattz1000"
 	item_state = "laser-pistol"
 	fire_delay = 0
-	slowdown = 0.2
+	slowdown = 0.05
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
@@ -222,7 +222,7 @@
 	icon_state = "magnetowattz"
 	fire_delay = 0
 	item_state = "laser-pistol"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/magneto)
 
 /obj/item/gun/energy/laser/wattz/recharger
 	name = "Recharger Pistol"
@@ -230,11 +230,13 @@
 	can_remove = 0
 	can_charge = 0
 	selfcharge = 1
+	fire_delay = 0
+	slowdown = 0.05
 	icon_state = "rechargerpistol"
 	w_class = WEIGHT_CLASS_SMALL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/recharger)
 	cell_type = /obj/item/stock_parts/cell/ammo/breeder
 	equipsound = 'sound/f13weapons/equipsounds/aep7equip.ogg'
 
@@ -242,13 +244,13 @@
 /obj/item/gun/energy/laser/pistol
 	name = "\improper AEP7 laser pistol"
 	desc = "A basic energy-based laser gun that fires concentrated beams of light."
-	slowdown = 0.2
+	slowdown = 0.05
 	icon_state = "AEP7"
 	item_state = "laser-pistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	fire_delay = 0
 	can_scope = FALSE
@@ -275,7 +277,7 @@
 /obj/item/gun/energy/laser/complianceregulator
 	name = "AEP5-CR Disabling Beam Pistol"
 	desc = "A laser pistol that has been modified for less-than-lethal work."
-	slowdown = 0.2
+	slowdown = 0.1
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
@@ -296,14 +298,14 @@
 //Solar Scorcher
 /obj/item/gun/energy/laser/solar
 	name = "\improper Solar Scorcher"
-	slowdown = 0.2
+	slowdown = 0.1
 	desc = "This modified AEP7 laser pistol takes its power from the sun, recharging slowly using stored solar energy. However, it cannot be recharged manually as a result."
 	icon_state = "solarscorcher"
 	item_state = "solarscorcher"
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/solar/hitscan) //27 dmg, .15 AP
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/solar) //27 dmg, .15 AP
 	cell_type = /obj/item/stock_parts/cell/ammo/ec //16 shots, self-charges
 	can_charge = 0
 	selfcharge = 1 //selfcharging adds 100 a shot
@@ -370,7 +372,7 @@
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
 	fire_delay = 1
-	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	zoomable = TRUE
 	zoom_amt = 10
@@ -386,7 +388,7 @@
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "wattz2k"
 	item_state = "sniper_rifle"
-	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/extended/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/wattz2k/extended)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	zoomable = TRUE
 	zoom_amt = 10
@@ -401,9 +403,10 @@
 	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. Fast firing, but not very powerful."
 	icon_state = "laser"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	fire_delay = 1
+	slowdown = 0.3
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
 	scope_y_offset = 20
@@ -412,7 +415,7 @@
 /obj/item/gun/energy/laser/aer9/focused
 	name = "\improper Hot-wired AER9 laser rifle"
 	desc = "A sturdy pre-war laser rifle. Emits beams of concentrated light to kill targets. This one has been jury-rigged against common sense to dump more power into its shots."
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lasgun)
 	fire_delay = 5
 
 //Ultracite Laser rifle
@@ -437,7 +440,8 @@
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
 	fire_delay = 3
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam/hitscan)
+	slowdown = 0.3
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter/tribeam)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/tribeamequip.ogg'
 
@@ -448,8 +452,9 @@
 	desc = "A cutting-edge, pre-war laser rifle. Its focusing crystal array is housed in gold alloy, making it difficult to maintain."
 	icon_state = "aer12"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer12)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	slowdown = 0.3
 	fire_delay = 1.5
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
@@ -463,8 +468,9 @@
 	desc = "A bleeding-edge, pre-war laser rifle. Extremely powerful, but eats MFCs like nothing else."
 	icon_state = "aer14"
 	item_state = "laser-rifle9"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/aer14)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	slowdown = 0.3
 	fire_delay = 1.5
 	scope_state = "AEP7_scope"
 	scope_x_offset = 12
@@ -479,8 +485,9 @@
 	icon_state = "laer"
 	item_state = "laer"
 	fire_delay = 3
+	slowdown = 0.3
 	burst_size = 1
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
 	equipsound = 'sound/f13weapons/equipsounds/laerequip.ogg'
 
@@ -492,11 +499,12 @@
 	icon_state = "lasercw"
 	item_state = "rcw"
 	fire_delay = 3
+	slowdown = 0.25
 	burst_size = 1
 	automatic = 1
 	autofire_shot_delay = 2
 	spread = 14
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
 	equipsound = 'sound/f13weapons/equipsounds/RCWequip.ogg'
 
@@ -516,7 +524,7 @@
 //Alien Blaster
 /obj/item/gun/energy/laser/plasma/pistol/alien
 	name = "alien blaster"
-	slowdown = 0.2
+	slowdown = 0.05
 	item_state = "alienblaster"
 	icon_state = "alienblaster"
 	desc = "This weapon is unlike any other you've ever seen before, and appears to be made out of metals not usually found on Earth. It certainly packs a punch, though."
@@ -534,6 +542,7 @@
 	name = "Gamma gun"
 	desc = "An advanced radiation weapon commonly utilized by people who have passionate hatred for their fellow man. Fires slow velocity, low damage radiation beams."
 	icon_state = "ultra_pistol"
+	slowdown = 0.05
 	item_state = "laser-pistol"
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
@@ -638,7 +647,7 @@
 	icon_state = "minigun_spin"
 	item_state = "minigun"
 	flags_1 = CONDUCT_1
-	slowdown = 1
+	slowdown = 0.5
 	slot_flags = null
 	w_class = WEIGHT_CLASS_HUGE
 	custom_materials = null
@@ -650,9 +659,8 @@
 	fire_delay = 1
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/laser.ogg'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling/hitscan)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling)
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
-	item_flags = NEEDS_PERMIT | SLOWS_WHILE_IN_HAND
 	var/obj/item/minigunpack/ammo_pack
 
 /obj/item/gun/energy/minigun/Initialize()
