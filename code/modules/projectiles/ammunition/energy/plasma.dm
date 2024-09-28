@@ -8,23 +8,23 @@
 	projectile_type = /obj/item/projectile/plasma
 	select_name = "plasma burst"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	e_cost = 100
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/plasma/adv
 	projectile_type = /obj/item/projectile/plasma/adv
 	delay = 10
-	e_cost = 10
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/plasma/weak
 	projectile_type = /obj/item/projectile/plasma/weak
-	e_cost = 100
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/plasmacarbine
 	projectile_type = /obj/item/projectile/plasmacarbine
 	select_name = "plasma burst"
 	icon_state = "neurotoxin"
 	fire_sound = 'sound/f13weapons/plasma_rifle.ogg'
-	e_cost = 160//12
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/plasma/scatter
 	projectile_type = /obj/item/projectile/f13plasma/scatter
@@ -60,4 +60,4 @@
 	projectile_type = /obj/item/projectile/f13plasma/repeater/mining
 	select_name = "mining plasma stream"
 	fire_sound = 'sound/f13weapons/plasma_rifle.ogg'
-	e_cost = 2.4 //this seems very low but the weapon fires 5 5-damage shots per burst and only fires in bursts
+	e_cost = 1000
