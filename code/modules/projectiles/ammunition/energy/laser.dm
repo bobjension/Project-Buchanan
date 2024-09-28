@@ -102,7 +102,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 /obj/item/ammo_casing/energy/laser/scatter/tribeam
 	projectile_type = /obj/item/projectile/beam/laser/tribeam
 	pellets = 3
-	variance = 14
+	variance = 21
 	select_name = "scatter"
 	e_cost = 180 //11 shots
 	fire_sound = 'sound/f13weapons/tribeamfire.ogg'
@@ -135,12 +135,12 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/pistol/recharger/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/recharger/hitscan
-	e_cost = 100 //20 shots
+	e_cost = 20 ///100 shots
 	fire_sound = 'sound/f13weapons/aep7fire.ogg'
 
 /obj/item/ammo_casing/energy/laser/stun  //compliance regulator
 	projectile_type = /obj/item/projectile/beam/laser/pistol/hitscan/stun
-	e_cost = 100
+	e_cost = 200
 	harmful = FALSE
 
 /obj/item/ammo_casing/energy/laser/pistol/wattz
@@ -165,11 +165,11 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/lasgun/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/lasgun/hitscan
-	e_cost = 80 //25 shots, as per FNV
+	e_cost = 100 //25 shots, as per FNV
 
 /obj/item/ammo_casing/energy/laser/lasgun/hitscan/focused
 	projectile_type = /obj/item/projectile/beam/laser/lasgun/hitscan/focused
-	e_cost = 400 //5 shots
+	e_cost = 200 
 
 /obj/item/ammo_casing/energy/laser/solar
 	projectile_type = /obj/item/projectile/beam/laser/solar
@@ -178,7 +178,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/solar/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/solar/hitscan
-	e_cost = 125 //16 shots, self charges. selfchargng adds 100 each time it fires off, so 2 ticks per laser recharge.
+	e_cost = 125
 
 /obj/item/ammo_casing/energy/laser/rcw
 	projectile_type = /obj/item/projectile/beam/laser/rcw
@@ -187,7 +187,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/rcw/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/rcw/hitscan
-	e_cost = 50 //it's actually 24 shots now, as it fires in a burst of 2
+	e_cost = 100 //it's actually 24 shots now, as it fires in a burst of 2
 
 /obj/item/ammo_casing/energy/laser/gatling/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/gatling/hitscan
@@ -203,7 +203,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/aer14
 	projectile_type = /obj/item/projectile/beam/laser/aer14
-	e_cost = 80 //25 shots
+	e_cost = 200 //25 shots
 	fire_sound = 'sound/f13weapons/aer14fire.ogg'
 
 /obj/item/ammo_casing/energy/laser/aer14/hitscan
@@ -212,7 +212,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/laser/aer12
 	projectile_type = /obj/item/projectile/beam/laser/aer12
-	e_cost = 100 //20 shots
+	e_cost = 133 //20 shots
 	fire_sound = 'sound/f13weapons/aer9fire.ogg'
 
 /obj/item/ammo_casing/energy/laser/aer12/hitscan
@@ -222,12 +222,12 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/gammagun
 	projectile_type = /obj/item/projectile/beam/gamma
-	e_cost = 75
+	e_cost = 200
 	fire_sound = 'sound/weapons/laser3.ogg'
 
 /obj/item/ammo_casing/energy/wattz2k
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k
-	e_cost = 125
+	e_cost = 133
 
 /obj/item/ammo_casing/energy/wattz2k/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k/hitscan
@@ -235,7 +235,7 @@ also: most hitscan weapons have more charge than their normal projectile counter
 
 /obj/item/ammo_casing/energy/wattz2k/extended
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k
-	e_cost = 83.3 //24
+	e_cost = 133 //24
 
 /obj/item/ammo_casing/energy/wattz2k/extended/hitscan
 	projectile_type = /obj/item/projectile/beam/laser/wattz2k/hitscan
