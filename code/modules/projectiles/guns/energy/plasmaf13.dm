@@ -1,13 +1,12 @@
 
-//////////////////
-//PLASMA WEAPONS//
-//////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// GOD WILL SMITE DOWN THE WICKED, HE WILL BATHE IN THEIR BLOOD AND REJOICE AS THE PIGS WEEP FOR FORGIVENESS //
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Plasma pistol
 /obj/item/gun/energy/laser/plasma/pistol
-	name ="plasma pistol"
+	name ="plasma pistol" 
 	slowdown = 0.1
-	armour_penetration = 0.02
 	item_state = "plasma-pistol"
 	icon_state = "plasma-pistol"
 	desc = "A pistol-sized miniaturized plasma caster built by REPCONN. It fires a bolt of superhot ionized gas."
@@ -17,14 +16,6 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/pistol)
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	equipsound = 'sound/f13weapons/equipsounds/pistolplasequip.ogg'
-
-//BoS knight craftable plasma pistol
-/obj/item/gun/energy/laser/plasma/pistol/light
-	name = "lightweight plasma pistol"
-	slowdown = 0.1
-	icon_state = "light-plasma-pistol"
-	desc = "A lightweight modification of the common REPCONN-built plasma pistol. Fires heavy low penetration plasma clots at a slower rate than the regular design due to reduced cooling."
-	fire_delay = 5
 
 /obj/item/gun/energy/laser/plasma/pistol/worn
 	name ="shoddy plasma pistol"
@@ -61,8 +52,7 @@
 	name ="plasma rifle"
 	item_state = "plasma"
 	icon_state = "plasma"
-	armour_penetration = 0.1
-	slowdown = 0.75 //this is one of the worst slowdowns in the game
+	slowdown = 0.4
 	fire_delay = 5.2
 	desc = "A miniaturized plasma caster that fires bolts of magnetically accelerated toroidal plasma towards an unlucky target."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma)
@@ -78,7 +68,7 @@
 	desc = "A burst-fire energy weapon that fires a steady stream of toroidal plasma towards an unlucky target."
 	ammo_type = list(/obj/item/ammo_casing/energy/plasmacarbine)
 	cell_type = /obj/item/stock_parts/cell/ammo/mfc
-	extra_damage = 15
+	extra_damage = -100
 	burst_size = 2
 	burst_shot_delay = 1.5
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -103,7 +93,6 @@
 	item_state = "multiplas"
 	icon_state = "multiplas"
 	fire_delay = 3
-	extra_damage = 15
 	desc = "A modified A3-20 plasma caster built by REPCONN equipped with a multicasting kit that creates multiple weaker clots."
 	equipsound = 'sound/f13weapons/equipsounds/plasequip.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/plasma/scatter)
@@ -126,7 +115,7 @@
 	cell_type = /obj/item/stock_parts/cell/ammo/ecp
 	sharpness = SHARP_EDGED
 	max_reach = 2
-	force = 20
+	force = 30 //still not as OP as most melee weapons
 	burst_size = 5
 	burst_shot_delay = 0.5
 	fire_delay = 10
